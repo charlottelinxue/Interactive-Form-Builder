@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+	content="Uniform Privacy Policy for Financial Institutions implemented by FTC">
+<meta name="author" content="FTC">
+
+<title>Opt Out Form</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/optout.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+ 
+
+    <![endif]-->
+
+</head>
+
+<body>
+	<div class="container">
+		<h3 id="institute"></h3>
+		<h4>Customer Privacy Preferences</h4>
+		<hr>
+
+		<div class="row">
+			<div id='downloadopt' class="col-md-4">
+				<button class="btn btn-lg" onclick="downloadHTML('optout.html')">Download
+					Form HTML</button>
+				<br>
+				<br>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<form role="form" action="sentEmail.do"
+					method="post">
+
+					<label>Please enter your name or username</label><br> <input
+						type="text" class="form-control" name="name" id="name"
+						placeholder="Name or username id registered with the institution"
+						required>
+					</p>
+					<label>Please enter your email address</label><br> <input
+						type="email" class="form-control" name = "email" id="exampleInputEmail1"
+						placeholder="name@email.com" required> <input
+						type="hidden" id="company_email">
+
+					</p>
+					<hr>
+					<table class="table table-hover table-condensed">
+						<thead>
+							<tr class="success">
+								<th width="350px">Sharing Purpose</th>
+								<th width="150px">Preference
+								<th>
+						</thead>
+						<tbody id="opt_form">
+
+						</tbody>
+					</table>
+					<p align="center">
+						<button type="submit" class="btn btn-success">Submit</button>
+
+
+						<script>
+							function myFunction() {
+								document.open();
+								document
+										.write("<h2>Thank you.</h2><br>We have submited your preferences. You may close this window.");
+								document.close();
+							}
+						</script>
+					</p>
+				</form>
+			</div>
+		</div>
+
+
+
+	</div>
+
+	<script>
+		function downloadHTML(fileName) {
+			var aLink = document.createElement('a');
+
+			d = document.getElementById('downloadopt');
+			var backup = d.outerHTML;
+			d.outerHTML = "";
+			var blob = new Blob([ document.documentElement.outerHTML ]);
+			var evt = document.createEvent("HTMLEvents");
+			evt.initEvent("click", false, false);
+
+			aLink.download = fileName;
+			aLink.href = URL.createObjectURL(blob);
+			aLink.dispatchEvent(evt);
+			window.location.reload(true);
+		}
+	</script>
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

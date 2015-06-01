@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Uniform Privacy Policy for Financial Institutions implemented by FTC">
+    <meta name="author" content="FTC">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fill.js"></script>
+    <title></title>
+    </head>
+
+    <body>
+
+<!-- Page Content -->
+<div>
+
+<!-- Heading Row -->
+<div>
+      <div>
+    <h1>U.S. CONSUMER PRIVACY NOTICE</h1>
+    <h2 id="institute-name"></h2>
+  </div>
+    </div>
+<div>
+      <div>
+    <hr>
+    <br>
+    <font color="red"><p id="rev_date"> </p></font>
+    <br>
+  </div>
+    </div>
+<div>
+<h3>Quick Facts Table</h3>
+We aim to provide you a clear and understandable explanation of how we use your information.<br> The following chart rates the way how we use your personal information.<br>
+          <div class="col-md-9"> 
+        <!-- Quick Facts Label -->
+        <table class="table table-bordered table-hover table">
+              <thead align="center">
+            <tr>
+                  <th align="left" >Purpose for Using your Information</th>
+                  <th>Daily Operations</th>
+                  <th>Own Marketing</th>
+                  <th>Joint Marketing</th>
+                  <th>Affiliate's Business</th>
+                  <th>Affiliate's Marketing</th>
+                  <th>Nonaffliates Marketing</th>
+                </tr>
+            <tr>
+                  <th align="left" >Impact on Privacy</th>
+                  <td colspan="2" align="center">Low</td>
+                  <td colspan="2" align="center">Medium</td>
+                  <td align="center">High</td>
+                  <td align="center">Very High</td>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <th align="left"  id="rating"></th>
+                  <td align="center" >Essencial for Business</td>
+                  <td align="center" id="rating2"></td>
+                  <td align="center" id="rating3"></td>
+                  <td align="center" id="rating4"></td>
+                  <td align="center" id="rating6"></td>
+                  <td align="center" id="rating7"></td>
+                </tr>
+          </tbody>
+            </table></p>
+              <div >
+    <div  style="width:70%">
+      70/100 points possible
+    </div>
+  </div>
+            
+        <!-- End Facts Label --> 
+      </div>
+  </div>
+<!-- Facts Row-->
+
+<div >
+      <hr>
+      <h2>FACTS</h2>
+      <h3 id="whatdoque"></h3>
+      <br>
+      <div >
+    <button type="button" > <span class="glyphicon glyphicon-chevron-down"></span> <b>WHY</b> </button>
+    <div id="why" class="collapse in"> Financial companies choose how to share your personal information. Federal law gives consumers the right to limit some but not all sharing. Federal law also requires us to inform you how we collect, share, and protect this information. Please read this notice carefully to understand what we do.
+            </div>
+    <br>
+  </div>
+      <div >
+    <button type="button" > <span class="glyphicon glyphicon-chevron-down"></span> <b>WHAT</b> </button>
+    <div id="what" > The types of information that we collect and share depends on the products or services you have with us. This information can include: <br>
+          <br>
+          <ul id="whatinfocheck">
+        
+        </ul>
+        </div>
+    <br>
+  </div>
+      <div >
+    <button type="button" > <span ></span> <b>HOW</b> </button>
+    <div id="how" ></div>
+    <!-- /.row --> 
+  </div>
+      <br>
+    </div>
+<div >
+      <hr>
+      <div >
+    <h3>Why do we share your personal information?</h3>
+    <table >
+          <thead>
+        <tr >
+              <th width="54%">Reasons we can share personal information</th>
+              <th id="shareque" width="23%"></th>
+              <th width="23%">Can you limit this sharing?</th>
+          </thead>
+          <tbody>
+        <tr>
+              <td><b>For our everyday business:</b>
+            <p>Purposes such as to process your transactions, maintain your account(s), respond to court orders and legal investigations, or report to credit bureaus.</p></td>
+              <td> Yes</td>
+              <td> No </td>
+            </tr>
+        <tr>
+              <td><b>For our marketing purposes:</b> <br>
+            To offer you other products and services from our company. </td>
+              <td id="sharing2"></td>
+              <td id="optout2"></td>
+            </tr>
+        <tr>
+              <td><b>For joint marketing with other financial companies:</b> <br>
+            To present you products and services that we offer in partnership with other financial companies. </td>
+              <td id="sharing3"></td>
+              <td id="optout3"></td>
+            </tr>
+        <tr>
+              <td><b>For our affiliates' everyday business purposes:</b> <br>
+            Information about your transactions and experiences. </td>
+              <td id="sharing4"></td>
+              <td id="optout4"></td>
+            </tr>
+        <tr>
+              <td><b>For our affiliates' everyday business purposes:</b> <br>
+            Information about your information about your creditworthiness. </td>
+              <td id="sharing5"></td>
+              <td id="optout5"></td>
+            </tr>
+            <!--This row only shows if answered YES on sharing6 field of index form-->
+                    <tr>
+              <td><b>For our affiliates to market to you.</b> <br>
+             </td>
+              <td id="sharing6"></td>
+              <td id="optout6"></td>
+            </tr>
+             <!--This row only shows if answered YES on sharing6 field of index form-->                       
+        <tr>
+              <td><b>For non-affiliates to market to you.</b> <br>
+            </td>
+              <td id="sharing7"></td>
+              <td id="optout7"></td>
+            </tr>
+      </tbody>
+        </table>
+        
+     <button type="button" onclick="optout()" >Submit your sharing preferences</button>   
+
+    <!-- /.col-md-10 --> 
+  </div>
+      <!-- /.row --> 
+    </div>
+<div class="row">
+      <hr>
+    </div>
+
+<!-- Accordions -->
+<div >
+      <div >
+    <h3>Limit Sharing</h3>
+    <a id="contact">&nbsp;</a>
+    <button type="button" > <span ></span> <b>To limit our sharing</b> </button>
+    <div id="limit" >
+          <ul>
+        <li><a onclick="optout()">Submit your sharing preferences</a></li>
+        <li id="sharephone"></li>
+        <li>Visit us online: <a href="" id="shareweb"></a></li>
+        <!-- If selected, offer mail in form -->
+        <li>Mail in a <a href="mailin.pdf">form</a>.</li>
+        <li id="othermethods"></li>
+      </ul>
+          <br>
+          Please Note:<br>
+          If you are a new customer, we can begin sharing your information <p id="expireday" style="display: inline"></p> days from the date we sent this notice. When you are no longer our customer, we continue to share your information as described in this notice. However, you can contact us at any time to limit our sharing. </div>
+    <br>
+    
+    <!--ONLY IF VALUE OF DIRECT MARKETING LIMIT IS NOT BLANK -->
+    <button type="button" > <span ></span> <b>How to limit our direct marketing contact</b> </button>
+    <div id="marketinglimit" >
+          <ul>
+        <li id="direct_contact"></li>
+      </ul>
+        </div>
+    <br>
+    <!--/ END OF OPTIONAL VALUE -->
+    
+    <button type="button" > <span class="glyphicon glyphicon-chevron-down"></span> <b>Questions</b> </button>
+    <div id="question">
+          <ul>
+        <li>Call us Toll Free <p id="otherphone" style="display: inline"></p> or visit us online at <a href="" id="otherweb" style="display: inline"></a></li>
+        <li id="email"></li>
+        <li id="mailladd">Mailing Address: </li>
+      </ul>
+        </div>
+    
+    <!-- /.Accordions --> 
+  </div>
+      
+      <!-- /.row --> 
+    </div>
+<div >
+      <hr>
+    </div>
+
+<!-- Table2 -->
+<div >
+      <div >
+    <h3>Who  we are</h3>
+    <table >
+          <tr>
+        <td  width="35%"><b>Who is providing this notice?</b></td>
+        <td width="75%" id="legalname"> This notice reflects the policy of </td>
+      </tr>
+        </table>
+  </div>
+      <!-- /.Accordions3 --> 
+      <!-- /.row --> 
+    </div>
+<!-- /.break -->
+<div >
+      <div >
+    <hr>
+  </div>
+    </div>
+
+<!-- Table3 -->
+<div >
+      <div >
+    <h3>What we do</h3>
+    <table >
+          <tr>
+        <td width="35%" id="protectQue"><b> </b></td>
+        <td width="75%"> To protect your personal information from unauthorized access and use we use security measures that comply with federal law. These measures include:
+              <ul id="measures">
+            <li>Computer safeguards</li>
+            <li>Secured files and buildings</li>
+           
+          </ul></td>
+      </tr>
+          <tr>
+        <td  id="collectQue"><b></b></td>
+        <td> We collect your information, for example, when you:
+              <ul id="howColl">
+          </ul>
+              <ul>
+            <li id="collection"></li>
+          </ul></td>
+      </tr>
+          <tr>
+        <td class="danger"><b> Why can't I limit all sharing? </b></td>
+        <td> Federal law gives you the right to limit some but not all sharing related to:
+              <ul>
+            <li>Affiliates' everyday business purposes: information about your creditworthiness</li>
+            <li>Affiliates from using your information to market to you</li>
+            <li>Nonaffiliates to market to you</li>
+          </ul>
+          <p id="referother"></p>
+        </td>
+      </tr>
+          <tr>
+        <td ><b> What happens when I limit sharing for an account I hold jointly with someone else? </b></td>
+        <td id="accountorpolicy"></td>
+      </tr>
+        </table>
+  </div>
+      <!-- /.Accordions3 --> 
+      <!-- /.row --> 
+    </div>
+<!-- /.break -->
+<div >
+      <div >
+    <hr>
+  </div>
+    </div>
+
+<!-- Accordions4 -->
+<div >
+      <div >
+    <h3>Definitions</h3>
+  </div>
+      <div >
+    <button type="button" > <span class="glyphicon glyphicon-chevron-down"></span> <b>Affiliates</b> </button>
+    <div id="Affiliates" > Companies related by common ownership or control. They can be financial and nonfinancial companies:<br>
+          <br>
+          <ul>
+        <li id="affiliate"></li>
+      </ul>
+          <br>
+        </div>
+    <br>
+  </div>
+      <div >
+    <button type="button" > <span class="glyphicon glyphicon-chevron-down"></span> <b>Nonaffiliates</b> </button>
+    <div id="Nonaffiliates" > Companies not related by common ownership or control. They can be Financial and nonfinancial companies.<br>
+          <br>
+          <ul>
+        <li id="naffiliate"></li>
+      </ul>
+          <br>
+        </div>
+    <br>
+  </div>
+      <div >
+    <button type="button" > <span class="glyphicon glyphicon-chevron-down"></span> <b>Joint Marketing</b> </button>
+    <div id="joint" > A formal agreement between nonaffiliated financial companies that together market financial products or services to you.<br>
+          <br>
+          <ul>
+        <li id="nonaffiliatesjoin"></li>
+      </ul>
+          <br>
+        </div>
+    <br>
+    <!-- /.Accordions4 --> 
+  </div>
+      <!-- /.row --> 
+    </div>
+
+<!-- Accordions5 -->
+<div >
+      <div >
+    <h3>Other Important Information</h3>
+    <a id="Other">&nbsp;</a> </div>
+      <div >
+    <button type="button" > <span class="glyphicon glyphicon-chevron-down"></span> <b>State and/or Foreign Regulations &nbsp;</b> </button>
+    <div id="extra">
+          <table>
+        <tr>
+            <td id="stateslaw"><b></b></td>
+        </tr>
+        
+      </table>
+          <br>
+          <br>
+        </div>
+    <br>
+    <br>
+    <!-- If selected aknowledgement receipt form --> 
+    <button type="button" > <span ></span> <b>Acknowledgement of Receipt Form</b> </button>
+    <div id="extra2" >Access an <a href="" target="new" id="receiptlink">aknowledgement receipt form</a>. </div>
+    <br>
+    <!-- /.Accordions5 --> 
+  </div>
+      <!-- /.row --> 
+    </div>
+
+<!-- Footer -->
+<footer>
+      <div >
+    <div >
+          <hr>
+          <p align="center" id="footerp">Copyright &copy; </p>
+        </div>
+  </div>
+    </footer>
+</div>
+<!-- /.container -->
+<!-- jQuery --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
